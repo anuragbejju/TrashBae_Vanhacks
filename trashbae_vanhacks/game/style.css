@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Kameron:700");
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+svg {
+  fill: #fffcff;
+  height: 30%;
+  left: 25%;
+  overflow: visible;
+  position: absolute;
+  stroke: none;
+  top: 12%;
+  width: 50%;
+  z-index: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.stage {
+  background: none;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  visibility: hidden;
+  width: 100%;
+}
+
+#bHoop {
+  stroke-width: 5;
+}
+#bHoop .shadow {
+  fill: rgba(0, 0, 0, 0.7);
+  stroke: none;
+}
+
+#basket #net {
+  fill: none;
+  stroke: #none;
+  stroke-miterlimit: 10;
+}
+#basket #ring {
+  fill: #df4931;
+  stroke: none;
+}
+
+#ball {
+  cursor: pointer;
+  fill: #df4931;
+  stroke: none;
+}
+#ball .ballPath {
+  -webkit-clip-path: url(#clip-path);
+          clip-path: url(#clip-path);
+}
+#ball .ballStripe {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  top: 0;
+}
+
+li {
+  display: inline-block;
+  width: 33%;
+}
+
+.copy {
+  background: #b71540;
+  box-shadow: 0 0 1px #633a26;
+  color: #ffffff;
+  font-family: 'Kameron', serif;
+  font-size: 1rem;
+  left: 0;
+  margin: 0;
+  padding: 6px 0;
+  position: fixed;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 10000;
+}
+
+.instructions {
+  bottom: 0;
+  font-size: 1rem;
+  background: #b71540;
+}
+
+#dialog{
+  background: #079992;
+  color: #ffffff;
+}
+
+
+.ui-widget {
+background: #F9F9F9;
+}
+
+
+.instructions {
+  bottom: 0;
+  font-size: 1rem;
+}
+
+
+.notify{  
+  position:absolute;
+  top:0px;
+  width:40%;
+  height: 0;
+  box-sizing:border-box;
+  color:white;
+  text-align:center;
+  overflow:hidden;
+  box-sizing:border-box;
+  transition:height .2s;
+  z-index:100;
+  left:35%;
+  top:50%;
+}
+
+#notifyType:before{
+  display:block;
+  margin-top:15px; 
+}
+
+.active{  
+  height:50px;
+}
+
+.success:before{
+  Content:"Aww Yeaaaaa! You're so great!";
+  color:#f0f0f0; 
+  font-weight: bold;
+}
+
+.failure:before{
+  Content:"Oh no! Please try a again :(";
+  color:#f0f0f0;  
+  font-weight: bold;
+}
+
+.finish-message {
+  text-align: center;
+  align-items: center;
+}
+
+.finish-button {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 0.6em;
+  color: red;
+  cursor: pointer;
+
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.finish-button :hover {
+  box-shadow: 0 0 40px 40px red inset;
+}

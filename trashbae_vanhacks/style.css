@@ -1,0 +1,22 @@
+canvas {
+  background: #c7ecee;
+  display: block;
+}
+
+div {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: url(https://jackrugile.com/images/misc/skyline-texture.png);
+}
+
+#logo{
+
+height:160px;
+width:160px;
+content:url('logo.png');
+top:12%;
+left:28%;
+};
